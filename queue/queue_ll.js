@@ -1,3 +1,5 @@
+//! implementation of queue using linked list
+
 class Node {
   constructor(value) {
     this.value = value
