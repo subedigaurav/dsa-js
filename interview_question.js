@@ -12,8 +12,8 @@
   return false;
 } */
 
-const array1 = ['a', 'b', 'c', 'x'];
-const array2 = ['z', 'b', 'r'];
+const array1 = ["a", "b", "c", "x"];
+const array2 = ["z", "b", "r"];
 
 // array1 ==> obj {
 //   a: true,
@@ -50,7 +50,7 @@ function containsCommonItem2(arr1, arr2) {
 // console.log(containsCommonItem2(array1, array2));
 
 function containsCommonItem3(array1, array2) {
-  return array1.some(item => array2.includes(item));
+  return array1.some((item) => array2.includes(item));
 }
 
 console.log(containsCommonItem3(array1, array2));

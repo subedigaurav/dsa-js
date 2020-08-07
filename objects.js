@@ -10,7 +10,7 @@ function a_function() {
 // instantiation
 class Player {
   constructor(name, type) {
-    console.log('[player]', this);
+    console.log("[player]", this);
     this.name = name;
     this.type = type;
   }
@@ -23,7 +23,7 @@ class Player {
 class Wizard extends Player {
   constructor(name, type) {
     super(name, type);
-    console.log('[wizard]', this);
+    console.log("[wizard]", this);
   }
 
   play() {
@@ -31,5 +31,5 @@ class Wizard extends Player {
   }
 }
 
-const wizard1 = new Wizard('Shelly', 'healer');
-const wizard2 = new Wizard('Shawn', 'dark magic');
+const wizard1 = new Wizard("Shelly", "healer");
+const wizard2 = new Wizard("Shawn", "dark magic");

@@ -1,16 +1,16 @@
-const ocean = ['hello', 'name', 'is', 'nemo'];
+const ocean = ["hello", "name", "is", "nemo"];
 
-const findNemo = fishes => {
-  fishes.forEach(fish => {
-    if (fish == 'nemo') {
-      console.log('nemo FOUND!');
+const findNemo = (fishes) => {
+  fishes.forEach((fish) => {
+    if (fish == "nemo") {
+      console.log("nemo FOUND!");
     }
   });
 };
-const findNemo1 = fishes => {
+const findNemo1 = (fishes) => {
   for (let fish of fishes) {
-    if (fish == 'nemo') {
-      console.log('nemo FOUND!');
+    if (fish == "nemo") {
+      console.log("nemo FOUND!");
     }
   }
 };
