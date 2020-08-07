@@ -61,10 +61,10 @@ class HashTable {
 }
 
 let hashTable = new HashTable(50);
-hashTable.set('grapes', 10000);
-hashTable.set('apples', 54);
-hashTable.set('oranges', 2);
-hashTable.get('grapes');
-hashTable.set('lichi', 5000);
+hashTable.set("grapes", 10000);
+hashTable.set("apples", 54);
+hashTable.set("oranges", 2);
+hashTable.get("grapes");
+hashTable.set("lichi", 5000);
 console.log(hashTable);
 console.log(hashTable.keys());
