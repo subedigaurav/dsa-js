@@ -13,7 +13,7 @@ class LinkedList {
   }
 
   append(value) {
-    process.stdout.write('[APPEND] ');
+    process.stdout.write("[APPEND] ");
     const newNode = new Node(value);
 
     if (this.head === null) {
@@ -29,7 +29,7 @@ class LinkedList {
   }
 
   prepend(value) {
-    process.stdout.write('[PREPEND] ');
+    process.stdout.write("[PREPEND] ");
     const newNode = new Node(value);
     if (this.head == null) {
       this.head = newNode;
@@ -70,7 +70,7 @@ class LinkedList {
   remove(index) {
     process.stdout.write(`[REMOVAL AT ${index}]: `);
     if (index < 0 || index > this.length || this.head == null) {
-      throw new Error('error: invalid index for removal');
+      throw new Error("error: invalid index for removal");
     }
 
     let temp = this.head;
@@ -133,10 +133,10 @@ class LinkedList {
   print() {
     let temp = this.head;
     while (temp != this.tail) {
-      process.stdout.write(temp.value + ' -> ');
+      process.stdout.write(temp.value + " -> ");
       temp = temp.next;
     }
-    process.stdout.write(temp.value + '\n');
+    process.stdout.write(temp.value + "\n");
     // process.stdout.write('LENGTH: ' + this.length + '\n');
   }
 }

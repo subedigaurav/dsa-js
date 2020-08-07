@@ -74,7 +74,7 @@ class LinkedList {
   remove(index) {
     process.stdout.write(`[REMOVAL AT ${index}]: `);
     if (index < 0 || index >= this.length || this.head == null) {
-      throw new Error('error: invalid index for removal');
+      throw new Error("error: invalid index for removal");
     }
 
     if (index == 0) {
@@ -117,10 +117,10 @@ class LinkedList {
   print() {
     let temp = this.head;
     while (temp.next != null) {
-      process.stdout.write(temp.value + ' ⇆ ');
+      process.stdout.write(temp.value + " ⇆ ");
       temp = temp.next;
     }
-    process.stdout.write(temp.value + '\n');
+    process.stdout.write(temp.value + "\n");
     // process.stdout.write('LENGTH: ' + this.length + '\n');
   }
 }
