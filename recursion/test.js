@@ -1,10 +1,10 @@
-let counter = 0
+let counter = 0;
 function inception() {
   if (counter > 3) {
-    return "done!"
+    return "done!";
   }
-  counter++
-  return inception()
+  counter++;
+  return inception();
 }
 
-console.log(inception())
+console.log(inception());

@@ -38,11 +38,11 @@ class MyArray {
 }
 
 const newArray = new MyArray();
-newArray.push('hi');
-newArray.push('you');
-newArray.push('!');
+newArray.push("hi");
+newArray.push("you");
+newArray.push("!");
 newArray.delete(0);
-newArray.push('are');
-newArray.push('nice');
+newArray.push("are");
+newArray.push("nice");
 newArray.delete(1);
 console.log(newArray);

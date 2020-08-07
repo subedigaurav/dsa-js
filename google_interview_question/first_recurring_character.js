@@ -5,7 +5,7 @@
 // if array = [2,3,4,5], then return undefined
 
 //! brute force method: naive solution
-const firstRecurringCharacter = nums => {
+const firstRecurringCharacter = (nums) => {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
       if (nums[i] == nums[j]) return nums[i];
@@ -17,7 +17,7 @@ const firstRecurringCharacter = nums => {
 //! using inbuilt Map() object
 //! O(n): space complexity
 //! O(n): time complexity
-const firstRecurringCharacter1 = nums => {
+const firstRecurringCharacter1 = (nums) => {
   let hashMap = new Map();
   for (let i = 0; i < nums.length; i++) {
     // if the element we are currently seeing is already in the map, it is the first repeated element
@@ -30,7 +30,7 @@ const firstRecurringCharacter1 = nums => {
 //! using the objects
 //! O(n): time complexity
 //! O(n): space complexity
-const firstRecurringCharacter2 = nums => {
+const firstRecurringCharacter2 = (nums) => {
   let map = {};
   for (let i = 0; i < nums.length; i++) {
     if (map[nums[i]]) return nums[i];

@@ -1,10 +1,10 @@
 // function to return the longest word in a sentence stripping any punctuation marks.
 function LongestWord(sen) {
-  let words = sen.split(' ');
+  let words = sen.split(" ");
   let lLength = 0;
   // remove any punctuation marks
   for (let i = 0; i < words.length; i++) {
-    words[i] = words[i].replace(/[.,\/#!@$%\^&\*;:{}=\-_`~()]/g, '');
+    words[i] = words[i].replace(/[.,\/#!@$%\^&\*;:{}=\-_`~()]/g, "");
     if (words[i].length > lLength) {
       lLength = words[i].length;
     }
@@ -15,5 +15,5 @@ function LongestWord(sen) {
   }
 }
 
-console.log(LongestWord('fun$%!! time'));
-console.log(LongestWord('I love mamamia.'));
+console.log(LongestWord("fun$%!! time"));
+console.log(LongestWord("I love mamamia."));

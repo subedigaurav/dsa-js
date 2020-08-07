@@ -45,7 +45,7 @@ class DoublyLinkedList {
   insert(index, value) {
     //* checking for the edge cases
     if (index < 0 || index >= this.length) {
-      throw new Error('error: index is invalid');
+      throw new Error("error: index is invalid");
     }
     process.stdout.write(`[INSERT] ${value} AT ${index}: `);
     //* prepend if the index is 0
@@ -66,7 +66,7 @@ class DoublyLinkedList {
 
   remove(index) {
     if (index < 0 || index > this.length) {
-      throw new Error('error: index is invalid');
+      throw new Error("error: index is invalid");
     }
     process.stdout.write(`[REMOVE] AT ${index}: `);
     if (index == 0) {
@@ -96,10 +96,10 @@ class DoublyLinkedList {
   print() {
     let tmp = this.head;
     while (tmp != this.tail) {
-      process.stdout.write(tmp.value + ' ⇆ ');
+      process.stdout.write(tmp.value + " ⇆ ");
       tmp = tmp.next;
     }
-    process.stdout.write(tmp.value + '\n');
+    process.stdout.write(tmp.value + "\n");
   }
 }
 
