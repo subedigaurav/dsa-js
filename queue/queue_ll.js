@@ -1,5 +1,4 @@
 //! implementation of queue using linked list
-
 class Node {
   constructor(value) {
     this.value = value
@@ -35,7 +34,7 @@ class Queue {
   }
 
   // removes from the front of the queue
-  dequeue(value) {
+  dequeue() {
     // if the queue is empty
     if (!this.first) {
       return null
@@ -47,7 +46,7 @@ class Queue {
     const dequeuedItem = this.first
     this.first = this.first.next
     this.length--
-    return dequeuedItem
+    return dequeuedItem.value
   }
 
   isEmpty() {
@@ -55,6 +54,7 @@ class Queue {
   }
 
   print() {
+    console.log('[QUEUE]')
     let temp = this.first
     while (temp !== null) {
       console.log(temp.value)
@@ -64,14 +64,16 @@ class Queue {
   }
 }
 
-const myQueue = new Queue()
-myQueue.enqueue('Joy')
-myQueue.enqueue('Matt')
-myQueue.enqueue('Pavel')
-myQueue.enqueue('Samir')
-myQueue.print()
-myQueue.peek()
-myQueue.dequeue()
-myQueue.dequeue()
-myQueue.dequeue()
-myQueue.print()
+// const myQueue = new Queue()
+// myQueue.enqueue('Joy')
+// myQueue.enqueue('Matt')
+// myQueue.enqueue('Pavel')
+// myQueue.enqueue('Samir')
+// myQueue.print()
+// myQueue.peek()
+// myQueue.dequeue()
+// myQueue.dequeue()
+// myQueue.dequeue()
+// myQueue.print()
+
+module.exports = Queue
