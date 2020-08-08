@@ -63,5 +63,3 @@ tree.insert(170)
 tree.insert(15)
 tree.insert(1)
 // console.log(JSON.stringify(tree))
-
-module.exports = BinarySearchTree
