@@ -1,4 +1,4 @@
-const Tree = require('../../tree/binary_search_tree/bst_z2m')
+const Tree = require('../../../tree/binary_search_tree/bst_z2m')
 
 Tree.prototype.DFSInOrder = function () {
   return traverseInOrder(this.root, [])
