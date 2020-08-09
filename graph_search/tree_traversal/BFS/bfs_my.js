@@ -1,5 +1,5 @@
-const tree = require('../../tree/binary_search_tree/bst')
-const Queue = require('../../queue/queue_ll')
+const tree = require('../../../tree/binary_search_tree/bst')
+const Queue = require('../../../queue/queue_ll')
 
 // instantiate a queue data structure
 const queue = new Queue()
