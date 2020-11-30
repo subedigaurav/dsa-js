@@ -1,1 +1,1 @@
-# Zero 2 Mastery, Baby!
+Mastery Baby!
